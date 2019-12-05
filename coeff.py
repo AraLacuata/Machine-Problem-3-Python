@@ -16,6 +16,6 @@ def coeff(x):
         nm[i-1,0] = np.linalg.norm(Y-val)
         
     I = nm.argmin()
-    coeff = np.polyfit(X,Y,I)
+    coeff = np.polyfit(X,Y,I+1)
 
     print(coeff)
